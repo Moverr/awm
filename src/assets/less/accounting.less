@@ -1,0 +1,74 @@
+@import "colors.less";
+
+html {
+    body {
+        .main {
+            #accountingContainer {
+                #glAccount {
+                    .input-group[class*=col-] {
+                        padding-right: 15px;
+                        padding-left: 15px;
+                        
+                        input {
+                            background-color: @White;
+                        }
+                    }
+                }
+                
+                #balanceSheetTableContainer {
+                    table {
+                        thead {
+                            tr {
+                                th {
+                                    &:nth-child(1) {
+                                        width: 50%;
+                                    }
+
+                                    &:nth-child(2) {
+                                        width: 50%;
+                                    }
+                                }
+                            }
+                        }
+                        
+                        tbody {
+                            tr {
+                                td {
+                                    &:nth-child(1) {
+                                        width: 50%;
+                                    }
+
+                                    &:nth-child(2) {
+                                        width: 50%;
+                                    }
+                                }
+                                
+                                &.total {
+                                    background-color: #888888;
+                                    color: #eeeeee;
+                                    
+                                    &:hover {
+                                        color: #333333;
+                                    }
+                                }
+                                
+                                &.totalSum {
+                                    background-color: #666666;
+                                    color: #eeeeee;
+                                    
+                                    &:hover {
+                                        color: #333333;
+                                    }
+                                }
+                                
+                                &.incomeStatementMainRow {
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

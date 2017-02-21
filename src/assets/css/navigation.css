@@ -1,0 +1,161 @@
+/* #003300 */
+/* #006600 */
+/* #66cc00 */
+/* #ff9900 */
+/* #333333 */
+/* #666666 */
+/* #999999 */
+/* #cccccc */
+/* #eeeeee */
+/* #000000 */
+/* #ffffff */
+/* #ff0000 */
+/* #338000 */
+/* #f5f5f5 */
+/* #66cc00 */
+html body {
+  /* ************************************************************************
+         * top navigation                                                         *
+         ************************************************************************ */
+  /* ************************************************************************
+         * left navigation                                                        *
+         ************************************************************************ */
+}
+html body .navbar.navbar-fixed-top {
+  background-color: #006600;
+  border: 0;
+  height: 70px;
+}
+html body .navbar.navbar-fixed-top .navbar-brand {
+  padding: 5px 10px;
+  height: 65px;
+  margin-left: 10px;
+}
+html body .navbar.navbar-fixed-top .navbar-brand img {
+  height: 100%;
+}
+html body .navbar.navbar-fixed-top ul.nav {
+  display: none;
+  height: 70px;
+}
+html body .navbar.navbar-fixed-top ul.nav li {
+  height: 70px;
+  background-color: #006600;
+}
+html body .navbar.navbar-fixed-top ul.nav li a {
+  height: 70px;
+  line-height: 70px;
+  color: #eeeeee;
+  padding: 0 0 0 20px;
+}
+html body .navbar.navbar-fixed-top ul.nav li a:active,
+html body .navbar.navbar-fixed-top ul.nav li a:hover,
+html body .navbar.navbar-fixed-top ul.nav li a:focus {
+  background-color: #338000;
+}
+html body .navbar.navbar-fixed-top ul.nav li a span {
+  font-size: 30px;
+  line-height: 70px;
+  height: 70px;
+}
+html body .navbar.navbar-fixed-top ul.nav li.user .input-group {
+  width: 230px;
+  margin: 18px;
+}
+html body .navbar.navbar-fixed-top ul.nav li.user .input-group input {
+  background-color: #ffffff;
+}
+html body .navbar.navbar-fixed-top ul.dropdown-menu {
+  background-color: #006600;
+}
+html body .navbar.navbar-fixed-top .navbar-collapse.collapse.in,
+html body .navbar.navbar-fixed-top .navbar-collapse.collapsing {
+  background-color: #006600;
+}
+html body .sidebar {
+  display: none;
+  position: fixed;
+  top: 46px;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  z-index: 1000;
+  padding: 60px 0 0 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: none;
+  border-right: solid 1px #eeeeee;
+  background-color: #f5f5f5;
+}
+html body .sidebar a {
+  padding-right: 0;
+  color: #666666;
+}
+html body .sidebar .nav-sidebar span.badge {
+  display: none;
+  margin-top: -4px;
+  margin-left: 10px;
+}
+html body .sidebar .nav-sidebar > li {
+  width: 100%;
+}
+html body .sidebar .nav-sidebar > li > a {
+  padding-left: 20px;
+  line-height: 28px;
+}
+html body .sidebar .nav-sidebar > li > a span.glyphicons {
+  margin-top: -1px;
+  margin-right: 0;
+}
+html body .sidebar .nav-sidebar .active > a,
+html body .sidebar .nav-sidebar .active > a:hover,
+html body .sidebar .nav-sidebar .active > a:focus {
+  background-color: #338000;
+  color: #eeeeee;
+}
+html body .sidebar .nav-sidebar .active > a span.badge,
+html body .sidebar .nav-sidebar .active > a:hover span.badge,
+html body .sidebar .nav-sidebar .active > a:focus span.badge {
+  background-color: #cccccc;
+  color: #333333;
+}
+html body .sidebar .nav-sidebar .parentitem.bold a {
+  font-weight: bold;
+}
+html body .sidebar .nav-sidebar .subitem {
+  height: 0;
+  max-height: 42px;
+}
+html body .sidebar .nav-sidebar .subitem a {
+  padding-left: 56px;
+  font-size: 14px;
+}
+html body .sidebar .nav-sidebar .separator {
+  border-bottom: solid 1px #dddddd;
+}
+html body .main #actionButtonContainer li a {
+  min-width: 150px;
+}
+@media (max-width: 991px) {
+  html body .sidebar {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  html body .navbar.navbar-fixed-top .navbar-right {
+    margin-top: 0;
+  }
+  html body .navbar.navbar-fixed-top .navbar-right li.user {
+    display: none;
+  }
+  html body .navbar.navbar-fixed-top .navbar-right li.dropdown {
+    float: right;
+  }
+  html body .navbar.navbar-fixed-top .navbar-right li.dropdown a {
+    text-align: right;
+    padding-right: 20px;
+  }
+}
+/*# sourceMappingURL=navigation.css.map */

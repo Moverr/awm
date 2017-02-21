@@ -1,0 +1,46 @@
+@import "colors.less";
+
+html {
+    body {
+        .main {
+            #savingsAccount {
+                & > div {
+                    padding: 0;
+                    
+                    &.balance {
+                        font-size: 25px;
+                        font-weight: bold;
+                        margin-bottom: 8px;
+                        
+                        .value {
+                            padding-left: 25px;
+                        }
+                    }
+                }
+            }
+            
+            #helpArea {
+                #accountArea {
+                    margin: 0;
+
+                    .panel {
+                        margin-bottom: 0;
+
+                        .panel-body {
+                            padding-top: 20px;
+
+                            .input-group-addon {
+                                min-width: 170px;
+                                text-align: right;
+                            }
+
+                            .input-group {
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

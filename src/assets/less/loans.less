@@ -1,0 +1,303 @@
+@import "colors";
+
+html {
+    body {
+        .main {
+            #tableTotalSum {
+                clear: both;
+            }
+            
+            #TransactionsAccountReportTypeForm,
+            #SavingsAccountReportTypeForm,
+            #loanReportTypeForm,
+            #tableTotalSum {
+                display: block;
+                margin-bottom: 10px;
+                
+                input,
+                p,
+                label,
+                select {
+                    height: 45px;
+                    line-height: 45px;
+                    font-size: 24px;
+                    font-weight: bold;
+                    width: 300px;
+                    margin-bottom: 5px;
+                }
+                
+                .genericReportTitle {
+                    width: 200px;
+                    float: left;
+                }
+                #transactionFilterHint,
+                #savingaccountFilterHint,
+                #loanFilterHint {
+                    margin-left: 20px;
+                    height: 45px;
+                    line-height: 45px;
+                    font-size: 14px;
+                    font-weight: normal;
+                    float: none;
+                }
+                
+                #loanReportTypeTotal {
+                    border: none;
+                    background-color: transparent;
+                }
+            }
+
+            #emailLoanReportDiv {
+                display: inline-block;
+                margin-bottom: 10px;
+                
+                input,
+                p,
+                label,
+                select {
+                    height: 45px;
+                    line-height: 45px;
+                    font-size: 24px;
+                    font-weight: bold;
+                    width: 300px;
+                    margin-bottom: 5px;
+                }
+                
+                .genericReportTitle {
+                    width: 200px;
+                    float: left;
+                }
+                
+                #loanFilterHint {
+                    margin-left: 20px;
+                    height: 45px;
+                    line-height: 45px;
+                    font-size: 14px;
+                    font-weight: normal;
+                    float: none;
+                }
+                
+                #loanReportTypeTotal {
+                    border: none;
+                    background-color: transparent;
+                }
+            }            
+
+            #defaultTableContainer {
+                &.allLoansTable {
+                    table {
+                        tbody {
+                            tr {
+                                td {
+                                    &:nth-child(1) {
+                                        width: 5%;
+                                    }
+                                    
+                                    &:nth-child(2) {
+                                        width: 45%;
+                                    }
+                                    
+                                    &:nth-child(3) {
+                                        width: 10%;
+                                        text-align: right;
+                                    }
+                                    
+                                    &:nth-child(4) {
+                                        width: 10%;
+                                        text-align: right;
+                                    }
+                                    
+                                    &:nth-child(5) {
+                                        width: 10%;
+                                    }
+                                    
+                                    &:nth-child(6) {
+                                        width: 15%;
+                                    }
+                                    
+                                    &:nth-child(7) {
+                                        width: 10%;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+            
+            #loanContainer {
+                display: none;
+                
+                button {
+                    margin-right: 30px;
+                    width: 300px;
+                    height: 52px;
+                }
+
+                .row {
+                    margin: 0 0 15px 0;
+                }
+                
+                #loan {
+                    
+                    .panel-body {
+                        padding-bottom: 0;
+                        
+                        div {
+                            padding: 0;
+                            
+                            .form-group {
+                                margin-left: 0;
+                                margin-right: 0;
+                                
+                                .input-group-addon {
+                                    min-width: 65px;
+                                    padding: 0 15px;
+                                }
+                                
+                                &.two-line {
+                                    overflow: visible;
+                                    height: 34px;
+                                }
+                            }
+                        }
+                    }
+                    
+                    form {
+                        label {
+                            padding-left: 0;
+                            
+                            &.two-line {
+                                padding-top: 0;
+                            }
+                        }
+                        
+                        #loanTabs {
+                            li {
+                                a {
+                                    border: none;
+                                }
+
+                                &.active {
+                                    & > a {
+                                        background-color: @Green-Highlight;
+                                        color: @White;
+                                        font-weight: bold;
+                                    }
+                                }
+
+                                a {
+                                    color: @Very-Dark-Grey;
+                                }
+                            }
+                        }
+                        
+                        #clientGeneralPanel {
+                            .panel-body {
+                                & > div:first-child {
+                                    padding-right: 30px;
+                                }
+
+                                & > div:last-child {
+                                    padding-left: 30px;
+                                }
+                            }
+                        }
+                        
+                        #loanTabContentList {
+                            padding-top: 20px;
+
+                            & > div > div.row {
+                                & > div:first-child {
+                                    padding-left: 0;
+                                }
+
+                                & > div:last-child {
+                                    padding-right: 0;
+                                }
+                            }
+
+                            .panel-heading {
+                                font-weight: bold;
+                            }
+                            
+                            .homeAddressPanel,
+                            .guarantorPanel {
+                                height: 210px;
+                            }
+
+                            .employmentPanel,
+                            .selfEmploymentPanel {
+                                height: 500px;
+                            }
+                            
+                            #otherInformationPanel {
+                            #rejectNoteGroup {
+                                    display: none;
+                                }
+                            }
+                            
+                            .generatedClientTab {
+                                
+                            }
+                        }
+                    }
+                }
+
+                #loanActions {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+//max:1309
+
+
+@media (max-width: 767px) {
+    body {
+        .main {
+            #loanContainer {
+                #loanTabContentList {
+                    & > div > div.row {
+                        & > div:first-child {
+                            padding-right: 0;
+                        }
+
+                        & > div:last-child {
+                            padding-left: 0;
+                        }
+                    }
+                }
+
+                #loanApplication {
+                    #homeAddressPanel,
+                    #guarantorPanel {
+                        height: 280px;
+                    }
+
+                    .panel-body > div {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+
+                    .row > div {
+                        padding: 0;
+                    }
+                }
+            }
+
+            .navbar-content {
+                li {
+                    a {
+                        margin-top: 15px;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+

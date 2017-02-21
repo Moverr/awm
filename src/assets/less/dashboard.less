@@ -1,0 +1,173 @@
+@import "colors";
+
+#dashboardArea {
+    
+
+    
+    .panel-body {
+        padding: 0;
+    }
+    
+    table {
+        border-collapse: separate; 
+        border-spacing: 3px 10px;
+        margin-bottom: 0;
+        padding: 0 10px;
+
+        tr {
+            margin-bottom: 4px;
+
+            th,
+            td {
+                text-align: right;
+                border: none;
+            }
+
+            td.image {
+                padding: 2px;
+                background-color: @Very-Light-Grey;
+                border: solid 1px @Light-Grey;
+                -webkit-border: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
+            }
+            
+            td.prefix {
+                text-align: left;
+                padding-left: 10px;
+                background-color: @Very-Light-Grey;
+                color: @Dark-Grey;
+                border: solid 1px @Light-Grey;
+
+                -webkit-border-top-left-radius: 4px;
+                -webkit-border-bottom-left-radius: 4px;
+                -moz-border-radius-topleft: 4px;
+                -moz-border-radius-bottomleft: 4px;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+            }
+        }
+    }
+    
+    .row-0 {
+        .panel {
+            height: 325px;
+            
+            .panel-body {
+                height: 268px;
+                overflow-x: hidden;
+                overflow-y: auto;
+            }
+        }
+    }
+    
+    #dashboardOverview {
+        tr {
+            td[colspan="4"] {
+                text-align: center;
+            }
+        }
+    }
+    
+    #dashboardProfile {
+        .panel-body {
+            padding-top: 20px;
+            
+            img {
+                border: solid 1px @Anthrazit;
+                padding: 5px;
+                width: 100%;
+                margin-bottom: 0px;
+                max-width: 133px;
+                max-height: 166px;
+            }
+            
+            .input-group-addon {
+                min-width: 120px;
+                text-align: right;
+            }
+
+            .input-group {
+                margin-bottom: 10px;
+                
+                input {
+                    background-color: @White;
+                }
+            }
+        }
+    }
+    
+    #dashboardAccount {
+        display: none;
+        
+        .panel-body {
+            padding: 20px 10px 0 10px;
+            
+            .input-group-addon {
+                min-width: 200px;
+                text-align: right;
+            }
+
+            .input-group {
+                margin-bottom: 10px;
+                
+                input {
+                    background-color: @White;
+                }
+            }
+        }
+    }
+    
+    #dashboardInventory {
+        .panel {
+            height: 357px;
+            
+            .panel-body {
+                padding: 20px 10px 0 10px;
+
+                .input-group-addon {
+                    min-width: 200px;
+                    text-align: right;
+                }
+
+                .input-group {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    
+    #dashboardNews {
+        position: relative;
+
+        .panel {
+            .panel-header {
+
+            }
+
+            .panel-body {
+
+                iframe {
+                    display: block !important;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    #dashboardArea {
+
+        
+        .row-0 {
+            .panel {
+                height: auto;
+
+                .panel-body {
+                    height: auto;
+                }
+            }
+        }
+    }
+}

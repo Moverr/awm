@@ -1,0 +1,967 @@
+/* #003300 */
+/* #006600 */
+/* #66cc00 */
+/* #ff9900 */
+/* #333333 */
+/* #666666 */
+/* #999999 */
+/* #cccccc */
+/* #eeeeee */
+/* #000000 */
+/* #ffffff */
+/* #ff0000 */
+/* #338000 */
+/* #f5f5f5 */
+/* #66cc00 */
+body {
+  /*    .awamoLinks {
+        a {
+            font-size: 30px;
+            color: @Anthrazit;
+        }
+    }*/
+}
+body #login {
+  padding-top: 100px;
+}
+body #login .loginbox {
+  padding: 15px 20px 10px 20px;
+  border: solid 1px #cccccc;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #fbfbfb;
+  box-shadow: 1px 2px 5px 0px #cccccc;
+}
+body #login .loginbox .profile-img {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+body #login .loginbox .login-logo {
+  margin: 0 auto 20px;
+  display: block;
+  width: 150px;
+}
+body #login .loginbox .message {
+  display: none;
+  text-align: center;
+  margin-top: 30px;
+}
+body #login .loginbox button:hover {
+  background-color: #cccccc;
+  border-color: #999999;
+  color: #ffffff;
+}
+body #login .loginbox button:active:hover {
+  background-color: #999999;
+  border-color: #666666;
+  color: #eeeeee;
+}
+body #login .loginbox .loginFormSubmitButtonText {
+  display: block;
+}
+body #login .loginbox .loginFormSubmitButtonImage {
+  display: none;
+  height: 24px;
+}
+body #login .loginbox div.forgotPasswordLink,
+body #login .loginbox div.backToLoginLink {
+  text-align: center;
+}
+body #login .loginbox div.forgotPasswordLink a,
+body #login .loginbox div.backToLoginLink a {
+  text-decoration: none;
+  color: #666666;
+}
+body #login .loginbox div.forgotPasswordLink a:hover,
+body #login .loginbox div.backToLoginLink a:hover {
+  color: #ff9900;
+}
+body #login .loginbox #forgotPasswordRow {
+  display: none;
+}
+body #login .loginbox .awamoLinks {
+  margin: 20px -20px -10px -20px;
+  background-color: #999999;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  text-align: center;
+}
+body #login .loginbox .awamoLinks a {
+  font-size: 30px;
+  line-height: 30px;
+  color: #eeeeee;
+}
+body #login .loginbox .awamoLinks a span {
+  padding: 10px;
+}
+body #login .loginbox .awamoLinks a .glyphicons:before {
+  padding: 0;
+}
+html body {
+  /* ************************************************************************
+         * top navigation                                                         *
+         ************************************************************************ */
+  /* ************************************************************************
+         * left navigation                                                        *
+         ************************************************************************ */
+}
+html body .navbar.navbar-fixed-top {
+  background-color: #006600;
+  border: 0;
+  height: 70px;
+}
+html body .navbar.navbar-fixed-top .navbar-brand {
+  padding: 5px 10px;
+  height: 65px;
+  margin-left: 10px;
+}
+html body .navbar.navbar-fixed-top .navbar-brand img {
+  height: 100%;
+}
+html body .navbar.navbar-fixed-top ul.nav {
+  display: none;
+  height: 70px;
+}
+html body .navbar.navbar-fixed-top ul.nav li {
+  height: 70px;
+  background-color: #006600;
+}
+html body .navbar.navbar-fixed-top ul.nav li a {
+  height: 70px;
+  line-height: 70px;
+  color: #eeeeee;
+  padding: 0 0 0 20px;
+}
+html body .navbar.navbar-fixed-top ul.nav li a:active,
+html body .navbar.navbar-fixed-top ul.nav li a:hover,
+html body .navbar.navbar-fixed-top ul.nav li a:focus {
+  background-color: #338000;
+}
+html body .navbar.navbar-fixed-top ul.nav li a span {
+  font-size: 30px;
+  line-height: 70px;
+  height: 70px;
+}
+html body .navbar.navbar-fixed-top ul.nav li.user .input-group {
+  width: 230px;
+  margin: 18px;
+}
+html body .navbar.navbar-fixed-top ul.nav li.user .input-group input {
+  background-color: #ffffff;
+}
+html body .navbar.navbar-fixed-top ul.dropdown-menu {
+  background-color: #006600;
+}
+html body .navbar.navbar-fixed-top .navbar-collapse.collapse.in,
+html body .navbar.navbar-fixed-top .navbar-collapse.collapsing {
+  background-color: #006600;
+}
+html body .sidebar {
+  display: none;
+  position: fixed;
+  top: 46px;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  z-index: 1000;
+  padding: 60px 0 0 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: none;
+  border-right: solid 1px #eeeeee;
+  background-color: #f5f5f5;
+}
+html body .sidebar a {
+  padding-right: 0;
+  color: #666666;
+}
+html body .sidebar .nav-sidebar span.badge {
+  display: none;
+  margin-top: -4px;
+  margin-left: 10px;
+}
+html body .sidebar .nav-sidebar > li {
+  width: 100%;
+}
+html body .sidebar .nav-sidebar > li > a {
+  padding-left: 20px;
+  line-height: 28px;
+}
+html body .sidebar .nav-sidebar > li > a span.glyphicons {
+  margin-top: -1px;
+  margin-right: 0;
+}
+html body .sidebar .nav-sidebar .active > a,
+html body .sidebar .nav-sidebar .active > a:hover,
+html body .sidebar .nav-sidebar .active > a:focus {
+  background-color: #338000;
+  color: #eeeeee;
+}
+html body .sidebar .nav-sidebar .active > a span.badge,
+html body .sidebar .nav-sidebar .active > a:hover span.badge,
+html body .sidebar .nav-sidebar .active > a:focus span.badge {
+  background-color: #cccccc;
+  color: #333333;
+}
+html body .sidebar .nav-sidebar .parentitem.bold a {
+  font-weight: bold;
+}
+html body .sidebar .nav-sidebar .subitem {
+  height: 0;
+  max-height: 42px;
+}
+html body .sidebar .nav-sidebar .subitem a {
+  padding-left: 56px;
+  font-size: 14px;
+}
+html body .sidebar .nav-sidebar .separator {
+  border-bottom: solid 1px #dddddd;
+}
+html body .main #actionButtonContainer li a {
+  min-width: 150px;
+}
+@media (max-width: 991px) {
+  html body .sidebar {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  html body .navbar.navbar-fixed-top .navbar-right {
+    margin-top: 0;
+  }
+  html body .navbar.navbar-fixed-top .navbar-right li.user {
+    display: none;
+  }
+  html body .navbar.navbar-fixed-top .navbar-right li.dropdown {
+    float: right;
+  }
+  html body .navbar.navbar-fixed-top .navbar-right li.dropdown a {
+    text-align: right;
+    padding-right: 20px;
+  }
+}
+html body .main #tableTotalSum {
+  clear: both;
+}
+html body .main #TransactionsAccountReportTypeForm,
+html body .main #SavingsAccountReportTypeForm,
+html body .main #loanReportTypeForm,
+html body .main #tableTotalSum {
+  display: block;
+  margin-bottom: 10px;
+}
+html body .main #TransactionsAccountReportTypeForm input,
+html body .main #SavingsAccountReportTypeForm input,
+html body .main #loanReportTypeForm input,
+html body .main #tableTotalSum input,
+html body .main #TransactionsAccountReportTypeForm p,
+html body .main #SavingsAccountReportTypeForm p,
+html body .main #loanReportTypeForm p,
+html body .main #tableTotalSum p,
+html body .main #TransactionsAccountReportTypeForm label,
+html body .main #SavingsAccountReportTypeForm label,
+html body .main #loanReportTypeForm label,
+html body .main #tableTotalSum label,
+html body .main #TransactionsAccountReportTypeForm select,
+html body .main #SavingsAccountReportTypeForm select,
+html body .main #loanReportTypeForm select,
+html body .main #tableTotalSum select {
+  height: 45px;
+  line-height: 45px;
+  font-size: 24px;
+  font-weight: bold;
+  width: 300px;
+  margin-bottom: 5px;
+}
+html body .main #TransactionsAccountReportTypeForm .genericReportTitle,
+html body .main #SavingsAccountReportTypeForm .genericReportTitle,
+html body .main #loanReportTypeForm .genericReportTitle,
+html body .main #tableTotalSum .genericReportTitle {
+  width: 200px;
+  float: left;
+}
+html body .main #TransactionsAccountReportTypeForm #transactionFilterHint,
+html body .main #SavingsAccountReportTypeForm #transactionFilterHint,
+html body .main #loanReportTypeForm #transactionFilterHint,
+html body .main #tableTotalSum #transactionFilterHint,
+html body .main #TransactionsAccountReportTypeForm #savingaccountFilterHint,
+html body .main #SavingsAccountReportTypeForm #savingaccountFilterHint,
+html body .main #loanReportTypeForm #savingaccountFilterHint,
+html body .main #tableTotalSum #savingaccountFilterHint,
+html body .main #TransactionsAccountReportTypeForm #loanFilterHint,
+html body .main #SavingsAccountReportTypeForm #loanFilterHint,
+html body .main #loanReportTypeForm #loanFilterHint,
+html body .main #tableTotalSum #loanFilterHint {
+  margin-left: 20px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+  font-weight: normal;
+  float: none;
+}
+html body .main #TransactionsAccountReportTypeForm #loanReportTypeTotal,
+html body .main #SavingsAccountReportTypeForm #loanReportTypeTotal,
+html body .main #loanReportTypeForm #loanReportTypeTotal,
+html body .main #tableTotalSum #loanReportTypeTotal {
+  border: none;
+  background-color: transparent;
+}
+html body .main #emailLoanReportDiv {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+html body .main #emailLoanReportDiv input,
+html body .main #emailLoanReportDiv p,
+html body .main #emailLoanReportDiv label,
+html body .main #emailLoanReportDiv select {
+  height: 45px;
+  line-height: 45px;
+  font-size: 24px;
+  font-weight: bold;
+  width: 300px;
+  margin-bottom: 5px;
+}
+html body .main #emailLoanReportDiv .genericReportTitle {
+  width: 200px;
+  float: left;
+}
+html body .main #emailLoanReportDiv #loanFilterHint {
+  margin-left: 20px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+  font-weight: normal;
+  float: none;
+}
+html body .main #emailLoanReportDiv #loanReportTypeTotal {
+  border: none;
+  background-color: transparent;
+}
+html body .main #defaultTableContainer.allLoansTable table tbody tr td:nth-child(1) {
+  width: 5%;
+}
+html body .main #defaultTableContainer.allLoansTable table tbody tr td:nth-child(2) {
+  width: 45%;
+}
+html body .main #defaultTableContainer.allLoansTable table tbody tr td:nth-child(3) {
+  width: 10%;
+  text-align: right;
+}
+html body .main #defaultTableContainer.allLoansTable table tbody tr td:nth-child(4) {
+  width: 10%;
+  text-align: right;
+}
+html body .main #defaultTableContainer.allLoansTable table tbody tr td:nth-child(5) {
+  width: 10%;
+}
+html body .main #defaultTableContainer.allLoansTable table tbody tr td:nth-child(6) {
+  width: 15%;
+}
+html body .main #defaultTableContainer.allLoansTable table tbody tr td:nth-child(7) {
+  width: 10%;
+}
+html body .main #loanContainer {
+  display: none;
+}
+html body .main #loanContainer button {
+  margin-right: 30px;
+  width: 300px;
+  height: 52px;
+}
+html body .main #loanContainer .row {
+  margin: 0 0 15px 0;
+}
+html body .main #loanContainer #loan .panel-body {
+  padding-bottom: 0;
+}
+html body .main #loanContainer #loan .panel-body div {
+  padding: 0;
+}
+html body .main #loanContainer #loan .panel-body div .form-group {
+  margin-left: 0;
+  margin-right: 0;
+}
+html body .main #loanContainer #loan .panel-body div .form-group .input-group-addon {
+  min-width: 65px;
+  padding: 0 15px;
+}
+html body .main #loanContainer #loan .panel-body div .form-group.two-line {
+  overflow: visible;
+  height: 34px;
+}
+html body .main #loanContainer #loan form label {
+  padding-left: 0;
+}
+html body .main #loanContainer #loan form label.two-line {
+  padding-top: 0;
+}
+html body .main #loanContainer #loan form #loanTabs li a {
+  border: none;
+}
+html body .main #loanContainer #loan form #loanTabs li.active > a {
+  background-color: #338000;
+  color: #ffffff;
+  font-weight: bold;
+}
+html body .main #loanContainer #loan form #loanTabs li a {
+  color: #333333;
+}
+html body .main #loanContainer #loan form #clientGeneralPanel .panel-body > div:first-child {
+  padding-right: 30px;
+}
+html body .main #loanContainer #loan form #clientGeneralPanel .panel-body > div:last-child {
+  padding-left: 30px;
+}
+html body .main #loanContainer #loan form #loanTabContentList {
+  padding-top: 20px;
+}
+html body .main #loanContainer #loan form #loanTabContentList > div > div.row > div:first-child {
+  padding-left: 0;
+}
+html body .main #loanContainer #loan form #loanTabContentList > div > div.row > div:last-child {
+  padding-right: 0;
+}
+html body .main #loanContainer #loan form #loanTabContentList .panel-heading {
+  font-weight: bold;
+}
+html body .main #loanContainer #loan form #loanTabContentList .homeAddressPanel,
+html body .main #loanContainer #loan form #loanTabContentList .guarantorPanel {
+  height: 210px;
+}
+html body .main #loanContainer #loan form #loanTabContentList .employmentPanel,
+html body .main #loanContainer #loan form #loanTabContentList .selfEmploymentPanel {
+  height: 500px;
+}
+html body .main #loanContainer #loan form #loanTabContentList #otherInformationPanel #rejectNoteGroup {
+  display: none;
+}
+html body .main #loanContainer #loanActions {
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  body .main #loanContainer #loanTabContentList > div > div.row > div:first-child {
+    padding-right: 0;
+  }
+  body .main #loanContainer #loanTabContentList > div > div.row > div:last-child {
+    padding-left: 0;
+  }
+  body .main #loanContainer #loanApplication #homeAddressPanel,
+  body .main #loanContainer #loanApplication #guarantorPanel {
+    height: 280px;
+  }
+  body .main #loanContainer #loanApplication .panel-body > div {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  body .main #loanContainer #loanApplication .row > div {
+    padding: 0;
+  }
+  body .main .navbar-content li a {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+}
+#dashboardArea .panel-body {
+  padding: 0;
+}
+#dashboardArea table {
+  border-collapse: separate;
+  border-spacing: 3px 10px;
+  margin-bottom: 0;
+  padding: 0 10px;
+}
+#dashboardArea table tr {
+  margin-bottom: 4px;
+}
+#dashboardArea table tr th,
+#dashboardArea table tr td {
+  text-align: right;
+  border: none;
+}
+#dashboardArea table tr td.image {
+  padding: 2px;
+  background-color: #eeeeee;
+  border: solid 1px #cccccc;
+  -webkit-border: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#dashboardArea table tr td.prefix {
+  text-align: left;
+  padding-left: 10px;
+  background-color: #eeeeee;
+  color: #666666;
+  border: solid 1px #cccccc;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+#dashboardArea .row-0 .panel {
+  height: 325px;
+}
+#dashboardArea .row-0 .panel .panel-body {
+  height: 268px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#dashboardArea #dashboardOverview tr td[colspan="4"] {
+  text-align: center;
+}
+#dashboardArea #dashboardProfile .panel-body {
+  padding-top: 20px;
+}
+#dashboardArea #dashboardProfile .panel-body img {
+  border: solid 1px #999999;
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 0px;
+  max-width: 133px;
+  max-height: 166px;
+}
+#dashboardArea #dashboardProfile .panel-body .input-group-addon {
+  min-width: 120px;
+  text-align: right;
+}
+#dashboardArea #dashboardProfile .panel-body .input-group {
+  margin-bottom: 10px;
+}
+#dashboardArea #dashboardProfile .panel-body .input-group input {
+  background-color: #ffffff;
+}
+#dashboardArea #dashboardAccount {
+  display: none;
+}
+#dashboardArea #dashboardAccount .panel-body {
+  padding: 20px 10px 0 10px;
+}
+#dashboardArea #dashboardAccount .panel-body .input-group-addon {
+  min-width: 200px;
+  text-align: right;
+}
+#dashboardArea #dashboardAccount .panel-body .input-group {
+  margin-bottom: 10px;
+}
+#dashboardArea #dashboardAccount .panel-body .input-group input {
+  background-color: #ffffff;
+}
+#dashboardArea #dashboardInventory .panel {
+  height: 357px;
+}
+#dashboardArea #dashboardInventory .panel .panel-body {
+  padding: 20px 10px 0 10px;
+}
+#dashboardArea #dashboardInventory .panel .panel-body .input-group-addon {
+  min-width: 200px;
+  text-align: right;
+}
+#dashboardArea #dashboardInventory .panel .panel-body .input-group {
+  margin-bottom: 10px;
+}
+#dashboardArea #dashboardNews {
+  position: relative;
+}
+#dashboardArea #dashboardNews .panel .panel-body iframe {
+  display: block !important;
+  margin: auto;
+}
+@media (max-width: 1199px) {
+  #dashboardArea .row-0 .panel {
+    height: auto;
+  }
+  #dashboardArea .row-0 .panel .panel-body {
+    height: auto;
+  }
+}
+html body .main #helpArea #profileArea {
+  margin: 0 0 15px 0;
+}
+html body .main #helpArea #profileArea .panel {
+  margin-bottom: 0;
+}
+html body .main #helpArea #profileArea .panel .panel-body {
+  padding-top: 20px;
+}
+html body .main #helpArea #profileArea .panel .panel-body img {
+  border: solid 1px #999999;
+  padding: 5px;
+  width: 100%;
+}
+html body .main #helpArea #profileArea .panel .panel-body .input-group-addon {
+  min-width: 120px;
+  text-align: right;
+}
+html body .main #helpArea #profileArea .panel .panel-body .input-group {
+  margin-bottom: 10px;
+}
+html body .main #savingsAccount > div {
+  padding: 0;
+}
+html body .main #savingsAccount > div.balance {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+html body .main #savingsAccount > div.balance .value {
+  padding-left: 25px;
+}
+html body .main #helpArea #accountArea {
+  margin: 0;
+}
+html body .main #helpArea #accountArea .panel {
+  margin-bottom: 0;
+}
+html body .main #helpArea #accountArea .panel .panel-body {
+  padding-top: 20px;
+}
+html body .main #helpArea #accountArea .panel .panel-body .input-group-addon {
+  min-width: 170px;
+  text-align: right;
+}
+html body .main #helpArea #accountArea .panel .panel-body .input-group {
+  margin-bottom: 10px;
+}
+html body .main #accountingContainer #glAccount .input-group[class*=col-] {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+html body .main #accountingContainer #glAccount .input-group[class*=col-] input {
+  background-color: #ffffff;
+}
+html body .main #accountingContainer #balanceSheetTableContainer table thead tr th:nth-child(1) {
+  width: 50%;
+}
+html body .main #accountingContainer #balanceSheetTableContainer table thead tr th:nth-child(2) {
+  width: 50%;
+}
+html body .main #accountingContainer #balanceSheetTableContainer table tbody tr td:nth-child(1) {
+  width: 50%;
+}
+html body .main #accountingContainer #balanceSheetTableContainer table tbody tr td:nth-child(2) {
+  width: 50%;
+}
+html body .main #accountingContainer #balanceSheetTableContainer table tbody tr.total {
+  background-color: #888888;
+  color: #eeeeee;
+}
+html body .main #accountingContainer #balanceSheetTableContainer table tbody tr.total:hover {
+  color: #333333;
+}
+html body .main #accountingContainer #balanceSheetTableContainer table tbody tr.totalSum {
+  background-color: #666666;
+  color: #eeeeee;
+}
+html body .main #accountingContainer #balanceSheetTableContainer table tbody tr.totalSum:hover {
+  color: #333333;
+}
+html body .main #accountingContainer #balanceSheetTableContainer table tbody tr.incomeStatementMainRow {
+  font-weight: bold;
+}
+html body .main #portfolioArea {
+  display: none;
+}
+html body .main #portfolioArea .panel-body {
+  height: 500px;
+}
+html body .main #portfolioArea .panel-body .chart {
+  height: 100%;
+}
+html body .main #portfolioArea .panel-body div.google-visualization-tooltip {
+  background-color: #ccc !important;
+}
+html body .main #portfolioArea .panel-body div.google-visualization-tooltip ul li span {
+  color: #fff !important;
+}
+html body .main #portfolioArea .panel-body .flotTip {
+  padding: 3px 5px;
+  background-color: #000;
+  z-index: 100;
+  color: #fff;
+  box-shadow: 0 0 10px #555;
+  opacity: .7;
+  filter: alpha(opacity=70);
+  border: 2px solid #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+html body .main #geoInformationArea #geoInformationClient #geoInformationMap {
+  border: solid 1px #999999;
+  height: 700px;
+}
+#sharePurchaseDatePicker {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#shareSaleGroup {
+  display: none;
+}
+html {
+  height: 100%;
+  position: relative;
+  min-height: 100%;
+}
+html caption {
+  display: block;
+}
+html .modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8) url('http://sampsonresume.com/labs/pIkfp.gif') 50% 50% no-repeat;
+}
+html body.loading {
+  overflow: hidden;
+}
+html body.loading .modal {
+  display: block;
+}
+html body {
+  height: 100%;
+  padding-top: 50px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 16px;
+}
+html body #datesSelectorLoanEndDate,
+html body #datesSelectorPaymentDue,
+html body #datesSelectorTransaction {
+  display: flex;
+}
+html body #aboutLink {
+  font-size: 20px;
+}
+html body #aboutLink a {
+  color: #ff9900;
+}
+html body div.container-fluid {
+  height: 100%;
+}
+html body div.container-fluid div.row {
+  height: 100%;
+}
+html body .content {
+  display: none;
+}
+html body label {
+  font-weight: normal;
+}
+html body .panel-default .panel-heading {
+  background-color: #666666;
+  color: #eeeeee;
+  height: 55px;
+  line-height: 35px;
+  font-size: 24px;
+  padding-left: 20px;
+}
+html body .panel-default .panel-heading span.glyphicons {
+  font-size: 34px;
+  margin-top: -7px;
+  margin-right: 10px;
+}
+html body .imageframe {
+  position: relative;
+}
+html body .imageframe img {
+  height: 200px;
+  width: auto;
+  display: block;
+  margin: auto;
+}
+html body .btn-primary {
+  outline: none;
+  outline-color: transparent !important;
+  background-color: #eeeeee;
+  border-color: #cccccc;
+  color: #333333;
+}
+html body .btn-primary:active,
+html body .btn-primary:focus {
+  background-color: #eeeeee;
+  border-color: #cccccc;
+  color: #333333;
+}
+html body .btn-primary:hover {
+  background-color: #666666;
+  border-color: #999999;
+  color: #eeeeee;
+}
+html body .btn-primary:active:hover {
+  background-color: #999999;
+  border-color: #666666;
+  color: #eeeeee;
+}
+html body .btn-primary.default {
+  background-color: #ffc266;
+  color: #333333;
+  border-color: #ffc266;
+}
+html body .btn-primary.default:active,
+html body .btn-primary.default:focus {
+  /*                    background-color: @Very-Light-Grey;
+                                        border-color: @Light-Grey;
+                                        color: @Very-Dark-Grey;*/
+}
+html body .btn-primary.default:active:hover,
+html body .btn-primary.default:hover {
+  background-color: #ff9900;
+  border-color: #ff9900;
+  color: #333333;
+}
+html body table tbody tr {
+  cursor: pointer;
+}
+html body table tbody tr:hover {
+  background-color: rgba(102, 204, 0, 0.2) !important;
+}
+html body table tbody tr td.percentage,
+html body table tbody tr td.currency {
+  text-align: right;
+}
+html body table.tablesorter-bootstrap tbody tr.even:hover td,
+html body table.tablesorter-bootstrap tbody tr.odd:hover td {
+  background-color: transparent;
+}
+html body .main {
+  display: none;
+  padding: 20px 20px 20px 320px;
+  margin-top: 35px;
+  float: right;
+  overflow: hidden;
+}
+html body .main h3 {
+  font-weight: bold;
+}
+html body .main h3,
+html body .main h4 {
+  border: none;
+}
+html body .main .sub-header {
+  padding-bottom: 10px;
+}
+html body .main .page-header {
+  margin-top: 10px;
+}
+html body .main .navbar-content {
+  background-color: transparent;
+  border-radius: 0;
+}
+html body .main .navbar-content li a {
+  margin-left: 20px;
+}
+html body .main .navbar-left li a {
+  margin-right: 20px;
+}
+html body .main #defaultTableContainer {
+  margin-bottom: 20px;
+}
+html body .main #defaultTableContainer #tableMessage {
+  display: none;
+}
+html body .standardTable {
+  display: none;
+}
+html body .standardTable thead th {
+  background-color: #666666;
+  color: #eeeeee;
+  height: 55px;
+  line-height: 35px;
+  font-size: 24px;
+  padding-left: 20px;
+}
+html body .standardTable thead th span.glyphicons {
+  font-size: 34px;
+  margin-top: -7px;
+  margin-right: 10px;
+}
+html body .standardTable thead th tr:hover {
+  cursor: pointer;
+}
+html body footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 30px;
+  padding: 0 0 0 10px;
+  margin: 0;
+  line-height: 30px;
+  color: #666666;
+  background-color: #f5f5f5;
+  z-index: 2000;
+  border-top: solid 1px #eeeeee;
+}
+html body footer p {
+  margin: 0;
+}
+@media (max-width: 991px) {
+  html body .main {
+    padding: 20px 20px 20px 20px;
+  }
+}
+@media (max-width: 767px) {
+  html body .main {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=cockpit.css.map */
+
+
+/*Added CSS to the main not through the less compiler
+*/
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.awamoLinks{
+  text-align:center; 
+  font-size:25px;
+
+}
+.awamoLinks a{color:#66cc00 !important;}
+
+.awamoLinks a:hover { text-decoration: none; color:#999; cursor: pointer; }
+
+.center-block{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding:10px;
+    text-align:center;
+
+}
+.login-logo {
+  margin:auto;
+}
+
+.navbar-brand{
+  background: none !important;
+}
+ 
+.error-text{ color:red; }
+
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 2px solid #42A948; /* green */
+}
+.ng-invalid:not(form)  {
+  border: 1px solid  red !important;
+}

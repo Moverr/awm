@@ -1,0 +1,237 @@
+/* #003300 */
+/* #006600 */
+/* #66cc00 */
+/* #ff9900 */
+/* #333333 */
+/* #666666 */
+/* #999999 */
+/* #cccccc */
+/* #eeeeee */
+/* #000000 */
+/* #ffffff */
+/* #ff0000 */
+/* #338000 */
+/* #f5f5f5 */
+/* #66cc00 */
+html body .main #tableTotalSum {
+  clear: both;
+}
+html body .main #TransactionsAccountReportTypeForm,
+html body .main #SavingsAccountReportTypeForm,
+html body .main #loanReportTypeForm,
+html body .main #tableTotalSum {
+  display: block;
+  margin-bottom: 10px;
+}
+html body .main #TransactionsAccountReportTypeForm input,
+html body .main #SavingsAccountReportTypeForm input,
+html body .main #loanReportTypeForm input,
+html body .main #tableTotalSum input,
+html body .main #TransactionsAccountReportTypeForm p,
+html body .main #SavingsAccountReportTypeForm p,
+html body .main #loanReportTypeForm p,
+html body .main #tableTotalSum p,
+html body .main #TransactionsAccountReportTypeForm label,
+html body .main #SavingsAccountReportTypeForm label,
+html body .main #loanReportTypeForm label,
+html body .main #tableTotalSum label,
+html body .main #TransactionsAccountReportTypeForm select,
+html body .main #SavingsAccountReportTypeForm select,
+html body .main #loanReportTypeForm select,
+html body .main #tableTotalSum select {
+  height: 45px;
+  line-height: 45px;
+  font-size: 24px;
+  font-weight: bold;
+  width: 300px;
+  margin-bottom: 5px;
+}
+html body .main #TransactionsAccountReportTypeForm .genericReportTitle,
+html body .main #SavingsAccountReportTypeForm .genericReportTitle,
+html body .main #loanReportTypeForm .genericReportTitle,
+html body .main #tableTotalSum .genericReportTitle {
+  width: 200px;
+  float: left;
+}
+html body .main #TransactionsAccountReportTypeForm #transactionFilterHint,
+html body .main #SavingsAccountReportTypeForm #transactionFilterHint,
+html body .main #loanReportTypeForm #transactionFilterHint,
+html body .main #tableTotalSum #transactionFilterHint,
+html body .main #TransactionsAccountReportTypeForm #savingaccountFilterHint,
+html body .main #SavingsAccountReportTypeForm #savingaccountFilterHint,
+html body .main #loanReportTypeForm #savingaccountFilterHint,
+html body .main #tableTotalSum #savingaccountFilterHint,
+html body .main #TransactionsAccountReportTypeForm #loanFilterHint,
+html body .main #SavingsAccountReportTypeForm #loanFilterHint,
+html body .main #loanReportTypeForm #loanFilterHint,
+html body .main #tableTotalSum #loanFilterHint {
+  margin-left: 20px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+  font-weight: normal;
+  float: none;
+}
+html body .main #TransactionsAccountReportTypeForm #loanReportTypeTotal,
+html body .main #SavingsAccountReportTypeForm #loanReportTypeTotal,
+html body .main #loanReportTypeForm #loanReportTypeTotal,
+html body .main #tableTotalSum #loanReportTypeTotal {
+  border: none;
+  background-color: transparent;
+}
+html body .main #emailLoanReportDiv {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+html body .main #emailLoanReportDiv input,
+html body .main #emailLoanReportDiv p,
+html body .main #emailLoanReportDiv label,
+html body .main #emailLoanReportDiv select {
+  height: 45px;
+  line-height: 45px;
+  font-size: 24px;
+  font-weight: bold;
+  width: 300px;
+  margin-bottom: 5px;
+}
+html body .main #emailLoanReportDiv .genericReportTitle {
+  width: 200px;
+  float: left;
+}
+html body .main #emailLoanReportDiv #loanFilterHint {
+  margin-left: 20px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+  font-weight: normal;
+  float: none;
+}
+html body .main #emailLoanReportDiv #loanReportTypeTotal {
+  border: none;
+  background-color: transparent;
+}
+html body .main #defaultTableContainer.allLoansTable table tbody tr td:nth-child(1) {
+  width: 5%;
+}
+html body .main #defaultTableContainer.allLoansTable table tbody tr td:nth-child(2) {
+  width: 45%;
+}
+html body .main #defaultTableContainer.allLoansTable table tbody tr td:nth-child(3) {
+  width: 10%;
+  text-align: right;
+}
+html body .main #defaultTableContainer.allLoansTable table tbody tr td:nth-child(4) {
+  width: 10%;
+  text-align: right;
+}
+html body .main #defaultTableContainer.allLoansTable table tbody tr td:nth-child(5) {
+  width: 10%;
+}
+html body .main #defaultTableContainer.allLoansTable table tbody tr td:nth-child(6) {
+  width: 15%;
+}
+html body .main #defaultTableContainer.allLoansTable table tbody tr td:nth-child(7) {
+  width: 10%;
+}
+html body .main #loanContainer {
+  display: none;
+}
+html body .main #loanContainer button {
+  margin-right: 30px;
+  width: 300px;
+  height: 52px;
+}
+html body .main #loanContainer .row {
+  margin: 0 0 15px 0;
+}
+html body .main #loanContainer #loan .panel-body {
+  padding-bottom: 0;
+}
+html body .main #loanContainer #loan .panel-body div {
+  padding: 0;
+}
+html body .main #loanContainer #loan .panel-body div .form-group {
+  margin-left: 0;
+  margin-right: 0;
+}
+html body .main #loanContainer #loan .panel-body div .form-group .input-group-addon {
+  min-width: 65px;
+  padding: 0 15px;
+}
+html body .main #loanContainer #loan .panel-body div .form-group.two-line {
+  overflow: visible;
+  height: 34px;
+}
+html body .main #loanContainer #loan form label {
+  padding-left: 0;
+}
+html body .main #loanContainer #loan form label.two-line {
+  padding-top: 0;
+}
+html body .main #loanContainer #loan form #loanTabs li a {
+  border: none;
+}
+html body .main #loanContainer #loan form #loanTabs li.active > a {
+  background-color: #338000;
+  color: #ffffff;
+  font-weight: bold;
+}
+html body .main #loanContainer #loan form #loanTabs li a {
+  color: #333333;
+}
+html body .main #loanContainer #loan form #clientGeneralPanel .panel-body > div:first-child {
+  padding-right: 30px;
+}
+html body .main #loanContainer #loan form #clientGeneralPanel .panel-body > div:last-child {
+  padding-left: 30px;
+}
+html body .main #loanContainer #loan form #loanTabContentList {
+  padding-top: 20px;
+}
+html body .main #loanContainer #loan form #loanTabContentList > div > div.row > div:first-child {
+  padding-left: 0;
+}
+html body .main #loanContainer #loan form #loanTabContentList > div > div.row > div:last-child {
+  padding-right: 0;
+}
+html body .main #loanContainer #loan form #loanTabContentList .panel-heading {
+  font-weight: bold;
+}
+html body .main #loanContainer #loan form #loanTabContentList .homeAddressPanel,
+html body .main #loanContainer #loan form #loanTabContentList .guarantorPanel {
+  height: 210px;
+}
+html body .main #loanContainer #loan form #loanTabContentList .employmentPanel,
+html body .main #loanContainer #loan form #loanTabContentList .selfEmploymentPanel {
+  height: 500px;
+}
+html body .main #loanContainer #loan form #loanTabContentList #otherInformationPanel #rejectNoteGroup {
+  display: none;
+}
+html body .main #loanContainer #loanActions {
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  body .main #loanContainer #loanTabContentList > div > div.row > div:first-child {
+    padding-right: 0;
+  }
+  body .main #loanContainer #loanTabContentList > div > div.row > div:last-child {
+    padding-left: 0;
+  }
+  body .main #loanContainer #loanApplication #homeAddressPanel,
+  body .main #loanContainer #loanApplication #guarantorPanel {
+    height: 280px;
+  }
+  body .main #loanContainer #loanApplication .panel-body > div {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  body .main #loanContainer #loanApplication .row > div {
+    padding: 0;
+  }
+  body .main .navbar-content li a {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=loans.css.map */

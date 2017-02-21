@@ -11,14 +11,19 @@ import { AuthGuard }                from './auth-guard.service';
 import { SelectivePreloadingStrategy } from './selective-preloading-strategy';
 
 //tenant components
-import { VerifyTenantComponent  }                           from './tenants/verify-tenant.component';
-import { userLogin } from './user/user-login';
+import { VerifyTenantComponent  }        from './tenants/verify-tenant.component';
+import { UserLoginComponent }            from './user/user-login.component';
 
 const appRoutes: Routes = [
   {
     path: '',
     component: VerifyTenantComponent
+  },
+  {
+    path: 'user/login',
+    component: UserLoginComponent
   }
+  
   // {
   //   path: 'admin',
   //   loadChildren: 'app/admin/admin.module#AdminModule',

@@ -4,7 +4,6 @@ import { Observable } 				from 'rxjs/Observable';
 import { Component, OnInit } 		from '@angular/core';
 
 import { Router } 					from '@angular/router';
-import { HeaderComponent } 			from '../addons/header.component';
 
 import { Tenant } 					from './tenant'
 import { TenantService } 			from './tenant.service';

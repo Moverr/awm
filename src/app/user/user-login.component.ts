@@ -4,7 +4,6 @@ import { Observable } 				from 'rxjs/Observable';
 import { Component, OnInit } 		from '@angular/core';
 
 import { Router } 					from '@angular/router';
-import { HeaderComponent } 			from '../addons/header.component';
 
 import { Tenant } 					from '../tenants/tenant'
 import { TenantService } 			from '../tenants/tenant.service';
@@ -14,30 +13,16 @@ import { TenantService } 			from '../tenants/tenant.service';
 @Component({
   selector : 'my-app',
   templateUrl: './user-login.view.html',
-  providers: [TenantService]
+  providers: [TenantService],
 
 })
 
 
 
-export class UserLogin implements OnInit{
-	title = "Mover De Movers";
-	tenants:Tenant[];
-
-	tenant  :Tenant;
-	formsubmitted :boolean = false;
-
-
+export class UserLoginComponent {
+	 
 	constructor(private tenantService: TenantService ){}
 
-	getTenants():void{}
-
-	// Initialize the Tenant Object to null
-	ngOnInit():void{
-	  
-	}
- 
-   
 }
 
 

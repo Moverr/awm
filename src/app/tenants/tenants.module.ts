@@ -3,25 +3,16 @@ import { CommonModule }             from '@angular/common';
 import { FormsModule }              from '@angular/forms';
 
 import { VerifyTenantComponent }    from './verify-tenant.component';
-import { HeaderComponent }          from '../addons/header.component';
-
-// import { TenantService }             from './tenant.service';
+import { AddonsModule }          from '../addons/header.module';
 
 import { TenantRoutingModule }       from './tenants-routing.module';
 
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    TenantRoutingModule
-  ],
-
-  declarations: [
-    VerifyTenantComponent,HeaderComponent
-  ],
-  entryComponents: [HeaderComponent]
+  imports: [  CommonModule,  FormsModule,  TenantRoutingModule,    AddonsModule  ],
+  declarations: [  VerifyTenantComponent  ],
+  exports:[VerifyTenantComponent]
 
   //providers: [ TenantRoutingModule ]
 

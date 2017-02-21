@@ -17,7 +17,9 @@ import { LoginRoutingModule }      from './login-routing.module';
 
 import { HeroesModule }            from './heroes/heroes.module';
 import { TenantsModule }           from './tenants/tenants.module';
+import { UserModule }              from './user/user.module';
 
+import {AddonsModule}              from './addons/header.module';
 
 
 // Services 
@@ -31,20 +33,21 @@ import { DialogService }           from './dialog.service';
     FormsModule,
     HeroesModule,
     HttpModule,
-
+    AddonsModule,
     TenantsModule,
-    LoginRoutingModule,  
+    UserModule,
+    //LoginRoutingModule,  
     AppRoutingModule
   ],
   declarations: [
     AppComponent,
-    ComposeMessageComponent,
-    LoginComponent,
+    ComposeMessageComponent,    
     PageNotFoundComponent
   ],
   providers: [
     DialogService
   ],
+  
   bootstrap: [ AppComponent ]
 })
 export class AppModule {

@@ -1,24 +1,22 @@
 import { NgModule }                 from '@angular/core';
 import { CommonModule }             from '@angular/common';
 import { FormsModule }              from '@angular/forms';
+import { AddonsModule }          from '../addons/header.module';
 
-import { UserLogin }                from './user-login';
-import { HeaderComponent }          from '../addons/header.component';
+import { UserLoginComponent }                from './user-login.component';
+
+
+// services
+import {TenantService}              from '../tenants/tenant.service'
 
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule
-  ],
+  imports: [ CommonModule, FormsModule, AddonsModule ],
+  declarations: [ UserLoginComponent ],  
+  exports   : [UserLoginComponent]
 
-  declarations: [
-    UserLogin,HeaderComponent
-  ],
-  entryComponents: [HeaderComponent]
-
-  //providers: [ TenantRoutingModule ]
+  
 
 })
 export class UserModule {}

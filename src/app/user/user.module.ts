@@ -2,34 +2,30 @@ import { NgModule }                 from '@angular/core';
 import { CommonModule }             from '@angular/common';
 import { FormsModule }              from '@angular/forms';
 
-import { VerifyTenantComponent }    from './verify-tenant.component';
+import { UserLogin }                from './user-login';
 import { HeaderComponent }          from '../addons/header.component';
-
-// import { TenantService }             from './tenant.service';
-
-import { TenantRoutingModule }       from './tenants-routing.module';
 
 
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
-    TenantRoutingModule
+    FormsModule
   ],
 
   declarations: [
-    VerifyTenantComponent,HeaderComponent
+    UserLogin,HeaderComponent
   ],
   entryComponents: [HeaderComponent]
 
   //providers: [ TenantRoutingModule ]
 
 })
-export class TenantsModule {}
+export class UserModule {}
 
-/*  Removed the Child Routing from independenent Modules and added them to the central routing 
-
+/*  AUTHOR: Muyinda Rogers
+    AWAMO COckpit 
+    
 /*
 Copyright 2017 Google Inc. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that

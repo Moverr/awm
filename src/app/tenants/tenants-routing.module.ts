@@ -7,12 +7,13 @@ import { VerifyTenantComponent }    from './verify-tenant.component';
 
 
 const tenantsRoutes: Routes = [
-  { path: '',  component: VerifyTenantComponent }
+ // { path: '',  component: VerifyTenantComponent },
+  { path: 'movers',  component: VerifyTenantComponent }
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forChild(tenantsRoutes)
+    RouterModule.forRoot(tenantsRoutes)
   ],
   exports: [
     RouterModule

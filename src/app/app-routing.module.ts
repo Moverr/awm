@@ -10,25 +10,28 @@ import { CanDeactivateGuard }       from './can-deactivate-guard.service';
 import { AuthGuard }                from './auth-guard.service';
 import { SelectivePreloadingStrategy } from './selective-preloading-strategy';
 
+//tenant components
+import { VerifyTenantComponent  }                           from './tenants/verify-tenant.component';
+import { userLogin } from './user/user-login';
+
 const appRoutes: Routes = [
   {
-    path: 'compose',
-    component: ComposeMessageComponent,
-    outlet: 'popup'
-  },
-  {
-    path: 'admin',
-    loadChildren: 'app/admin/admin.module#AdminModule',
-    canLoad: [AuthGuard]
-  },
-  {
-    path: 'crisis-center',
-    loadChildren: 'app/crisis-center/crisis-center.module#CrisisCenterModule',
-    data: { preload: true }
-  },
-  { path: 'tenants',   redirectTo: '/tenants', pathMatch: 'full' },
+    path: '',
+    component: VerifyTenantComponent
+  }
+  // {
+  //   path: 'admin',
+  //   loadChildren: 'app/admin/admin.module#AdminModule',
+  //   canLoad: [AuthGuard]
+  // },
+  // {
+  //   path: 'crisis-center',
+  //   loadChildren: 'app/crisis-center/crisis-center.module#CrisisCenterModule',
+  //   data: { preload: true }
+  // },
+ // { path: '',   redirectTo: '/tenants', pathMatch: 'full' },
 
-  { path: '**', component: PageNotFoundComponent }
+  //{ path: '**', component: PageNotFoundComponent }
 ];
 
   

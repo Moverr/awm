@@ -47,9 +47,16 @@ export class VerifyTenantComponent implements OnInit{
 		if(!tenantId){
 			return ;
 		}
-		var res = this.tenantService.verifyTenant(tenantId);
-		console.log("MIX");
+		var res = this.tenantService.verifyTenant(tenantId).subscribe(
+			 function(response){console.log("Success Response"+response) },
+			 function(error){console.log("Error Response"+error) },
+			 function(complete){console.log("Complete Response"+complete) },
+			 
+		);
+		
+		console.log("start");
 		console.log(res);
+		console.log("end");
 
 			
 
@@ -62,7 +69,12 @@ export class VerifyTenantComponent implements OnInit{
 	//  this.tenantService.getTenantByName(this.tenant.tenantId);
 
 
-	}
+}
+  openLogin = function(){
+	alert("Client Exists");
+  }
+
+ 
 
 	get diagnostic(){
 		return  JSON.stringify(this.tenant);

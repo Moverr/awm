@@ -1,8 +1,12 @@
 import { Injectable }                from '@angular/core';
-import { Headers,RequestOptions,Http }    from '@angular/http';
+import { Headers,RequestOptions,Http,Response }    from '@angular/http';
 
 import { Observable }                from 'rxjs/Observable';
 import 'rxjs/add/operator/toPromise';
+import 'rxjs/add/operator/catch';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/observable/throw';
+
 
 import { Tenant }                    from './tenant';
 import { TENANTS }                   from './mock-tenants';
@@ -30,13 +34,17 @@ export class TenantService {
     return this.tenant;
   }
 
-   verifyTenant(tenantId:string) : Promise<void>{
+   verifyTenant(tenantId:string) : Observable<Tenant>{
 
      //add the dam headders 
      let headers = new Headers(
        {'tenantId':tenantId.trim()}
        );
        this.tenantId = tenantId.trim();
+       this.tenant['tenantId'] = this.tenantId;
+      // this.initialize_tenant(new Tenant(id:1,'tenantId':this.tenantId));
+      console.log(this.tenant);
+       
      let options = new RequestOptions({headers:headers})
 
      console.log(this.headers);
@@ -44,23 +52,31 @@ export class TenantService {
      
 
      return this.http.post(this.url,{options},options)
-               .toPromise()
-               .then(this.tenantExists)
+               .map(this.tenantExists)
                .catch(this.handleError);
 
    }
 
-   private tenantExists(){
-     this.tenant.tenantId = this.tenantId;
+   private tenantExists(res : Response){
+     
+     let body = res.json();
+     return body.data || {} ;
     
    }
 
 
-   private handleError(error: any): Promise<any> {
-   //  console.error('An error occurred', error); // for demo purposes only
-   this.tenant.tenantId = "";
-    console.log("TEST : "+error.status)
-    return Promise.reject(error.status);
+   private handleError(error:Response | any) {
+     let  errMsg: string;
+     if(error instanceof Response){
+       const body = error.json() || '';
+       const err  = body.error   || JSON.stringify(body);
+       errMsg = `${error.status} - ${error.statusText || '' } ${err}`; 
+     }
+     else{
+       errMsg = error.message ? error.message :  error.toString();
+     }
+     console.log(errMsg);
+     return Observable.throw(errMsg);
   }
 
 

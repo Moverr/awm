@@ -10,10 +10,11 @@ import { TenantService } 			from './tenant.service';
 
 
 
+
 @Component({
   selector : 'my-app',
   templateUrl: './verify-tenant.view.html',
-  providers: [TenantService]
+
 
 })
 
@@ -33,8 +34,7 @@ export class VerifyTenantComponent implements OnInit{
 
 	// Initialize the Tenant Object to null
 	ngOnInit():void{
-		//console.log("welcome HOme MOvers");
-		this.tenant = new Tenant(1,"");
+		this.tenant =  this.tenantService.initialize_tenant(new Tenant(1,""));
 	}
 
 
@@ -47,9 +47,11 @@ export class VerifyTenantComponent implements OnInit{
 		if(!tenantId){
 			return ;
 		}
-		this.tenantService.verifyTenant(tenantId)
-			.then( console.log("Mover Ya d Baddest"));
+		var res = this.tenantService.verifyTenant(tenantId);
+		console.log("MIX");
+		console.log(res);
 
+			
 
 
 	// //TODO : Pass details to the SErvice to Check if the client is verified

@@ -25,6 +25,10 @@ import {AddonsModule}              from './addons/header.module';
 // Services 
 import { DialogService }           from './dialog.service';
 
+// Services 
+import { UtiltiesService }           from './_services/utilities.service';
+import { TenantService } 		         from './tenants/tenant.service';
+
 
 
 @NgModule({
@@ -45,7 +49,7 @@ import { DialogService }           from './dialog.service';
     PageNotFoundComponent
   ],
   providers: [
-    DialogService
+    DialogService,UtiltiesService,TenantService
   ],
   
   bootstrap: [ AppComponent ]
